@@ -1,0 +1,15 @@
+name: CustomEndSpawnPoint
+version: '${project.version}'
+main: xyz.akiradev.customendspawnpoint.CustomEndSpawnPoint
+api-version: 1.19
+authors: [ AkiraDev ]
+description: Customize end portal teleport spawn point
+permissions:
+  customendspawnpoint.set:
+    description: "Allows the player to set the spawn point of the end portal teleport"
+    default: op
+commands:
+  setendspawn:
+    description: "Set the spawn point of the end portal teleport"
+    aliases: [ setspawn ]
+    permission: customendspawnpoint.set
